@@ -51,12 +51,26 @@ code {
   font-weight: 325;
 }
 
+.github-Link:hover,
+.github-Ling:focus-visible {
+  background: -webkit-linear-gradient(90deg, #292929, #646464, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .nav-link {
   font-size: 2rem;
-  margin: 1rem 2rem 0rem 1rem;
+  margin: 0.75rem 2rem 0rem 1rem;
   font-weight: 300;
   text-decoration: none;
   color: #ffffff;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: #ff0000;
+  transform: translateY(-0.40rem);
+  transition: 1000ms;
 }
 
 .nav-Border {
@@ -83,15 +97,44 @@ code {
 }
 
 .header-Animation {
-  margin: auto;
-  font-size: 3.5rem;
-  width: 45rem;
-  height: 10rem;
-  padding-top: 3rem;
-  text-align: center;
+  position: relative;
+  font-size: 3rem;
+  width: 37rem;
+  height: 5rem;
+  text-align: left;
   font-weight: 325;
-  background: -webkit-linear-gradient(45deg, #ff0000, #ff00ff, #8e03ff);
+  background: -webkit-linear-gradient(45deg, #ff0000, #d9ff00, #ff9a03);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.introduction-Section {
+  margin-top: 7rem;
+  margin-left: 10rem;
+  width: 40rem;
+  height: 30rem;
+  position: relative;
+}
+
+.introduction-Section::before {
+  content: "";
+  position: absolute;
+  inset: -5px; /* control the spread */
+  transform: translate(10px, 8px); /* control the offsets */
+  z-index: -1; /* place the element behind */
+  background: -webkit-linear-gradient(45deg, #1300be, #920092, #460080);
+  filter: blur(50px); /* control the blur */
+}
+
+.introduction-Header {
+  font-size: 4rem;
+  font-style: oblique;
+  font-weight: 350;
+  color: #ffffff;
+}
+
+.introduction-Content {
+  font-size: 1.3rem;
+  color: #ffffff;
 }
 /* Header End */
