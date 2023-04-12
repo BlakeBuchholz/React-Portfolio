@@ -3,7 +3,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    background: linear-gradient(45deg, #92118c, #4e088f, #340094, #43026e);
+    background: linear-gradient(45deg, #92118c, #4e088f, #340094, #43026e) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -52,10 +55,10 @@ code {
 }
 
 .github-Link:hover,
-.github-Ling:focus-visible {
-  background: -webkit-linear-gradient(90deg, #292929, #646464, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.github-Link:focus-visible {
+  color: #ff0000;
+  transform: translateY(-0.40rem);
+  transition: 1000ms;
 }
 
 .nav-link {
@@ -112,29 +115,39 @@ code {
   margin-top: 7rem;
   margin-left: 10rem;
   width: 40rem;
-  height: 30rem;
+  height: 38rem;
   position: relative;
 }
 
 .introduction-Section::before {
   content: "";
   position: absolute;
-  inset: -5px; /* control the spread */
-  transform: translate(10px, 8px); /* control the offsets */
+  inset: -10px; /* control the spread */
+  transform: translate(10px, 10px); /* control the offsets */
   z-index: -1; /* place the element behind */
   background: -webkit-linear-gradient(45deg, #0c0077, #630063, #3e0070);
-  filter: blur(50px); /* control the blur */
+  filter: blur(40px); /* control the blur */
 }
 
 .introduction-Header {
-  font-size: 4rem;
+  font-size: 5rem;
   font-style: oblique;
   font-weight: 350;
   color: #ffffff;
 }
 
 .introduction-Content {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.codingBrackets {
+  position: absolute;
+  margin-left: 60rem;
+}
+
+.codingBrackets-Content {
+  font-size: 1.5rem;
   color: #ffffff;
 }
 /* Header End */
